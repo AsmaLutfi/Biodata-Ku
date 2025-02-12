@@ -1,0 +1,150 @@
+<html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: little summer, little summer;
+            background-color: #A35C7A;
+            color: #A35C7A;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #FFCCE1;
+            padding: 100px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+        }
+        
+        img {
+        width: 150px; /* Sesuaikan ukuran */
+        height: 150px; /* Pastikan width dan height sama */
+        object-fit: cover; /* Memastikan gambar tetap proporsional */
+        border-radius: 50%; /* Membuatnya bulat */
+        border: 3px solid white;
+        transition: transform 0.3s ease;
+        }
+        .container {
+        background: linear-gradient(45deg, #de95b3, #ffaad3);
+        border-radius: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0px 0px 10px rgba(255, 182, 193, 0.8);
+        animation: sparkle 1.5s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            0% { box-shadow: 0px 0px 10px rgba(255, 182, 193, 0.8); }
+            100% { box-shadow: 0px 0px 20px rgba(255, 255, 255, 1); }
+        }
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px solid white;
+    }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+        button {
+            background-color: white;
+            color: #A35C7A;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background-color: #f5f5f5;
+        }
+        .floating-gallery {
+        width: 90%;
+        max-width: 500px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; /* Mengatur posisi kiri & kanan */
+        gap: 0.5rem; /* Jarak antar kontainer */
+        }
+
+        .floating-gallery .container {
+        flex: 1; /* Membuat kedua container memiliki ukuran yang sama */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .floating-gallery img {
+        width: 100%; /* Menyesuaikan ukuran gambar dengan container */
+        max-width: 200px; /* Membatasi agar tidak terlalu besar */
+        height: 250px; /* Pastikan gambar memiliki tinggi yang sama */
+        object-fit: cover; /* Menjaga proporsi gambar */
+        border-radius: 15px;
+        border: 4px solid white;
+        }
+
+        .text {
+            color: #A35C7A;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+        }
+        .navigation {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>📜Informasi Pribadi</h2>
+        <img src="Picture 1.jpeg" alt="Foto Profil">
+        <p><strong>🧑 Nama:</strong> Asma Lutfi</p>
+        <p><strong>📍 Tempat & tanggal lahir:</strong> Siwalempu, 07 Mei 2005</p>
+        <p><strong>🏡 Alamat:</strong> Jl. Lengaru, Palu Timur</p>
+        <p><strong>🎮 Hobi:</strong> Gaming and Reading</p>
+        <p><strong>🍦 Makanan Favorit:</strong> Es Krim</p>
+        <p><strong>🥤 Minuman Favorit:</strong> Susu Strawberry</p>
+        <p><strong>🎶 Musik Favorit:</strong> Blessing Cover by TNF</p>
+    </div>
+
+    <div class="floating-gallery">
+        <div class="container">
+            <img src="Picture 2.jpeg" alt="Foto 1">
+            <p class="text">🌱 Kesuksesan bukan tentang seberapa cepat kamu sampai, tapi seberapa konsisten kamu melangkah✨</p>
+        </div>
+        <div class="container">
+            <img src="Picture 3.jpeg" alt="Foto 2">
+            <p class="text">🌟 "Jadilah perubahan yang ingin kamu lihat di dunia💖</p>
+        </div>
+    </div>
+    
+
+
+    <div class="navigation">
+        <button onclick="window.location.href='Page3.html'">📖 Next page</button>
+    </div>
+</body>
+</html>
